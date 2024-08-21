@@ -9,16 +9,16 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "8754146"))
+APP_ID = int(os.environ.get("APP_ID", "15912260"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "8b56a6989f6d04f6f4fe78133ade02fd")
+API_HASH = os.environ.get("API_HASH", "5c7ba9544c4d7cf3fecefebf1fd6f8bc")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001512818854"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002050257310"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5669934860"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "533890503"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -30,14 +30,14 @@ STREAM = os.environ.get("STREAM", "True")
 DELETE = os.environ.get("DELETE", "false")
 
 #start msg without verify if need set True else set false (must use capital T)
-SRT_VERIFY = os.environ.get("SRT_VERIFY", "True")
+SRT_VERIFY = os.environ.get("SRT_VERIFY", "false")
 
 #verify URL if need set True else set false (must use capital T)
 VERIFY = os.environ.get("VERIFY", "false")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://SkMedia:Tharunraj1828@cluster0.vbdxs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "tamilskmoviez")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://MovieFive:8056939684@cluster0.0ovdo8e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = lambda: int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
@@ -54,11 +54,11 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(5669934860)
+ADMINS.append(533890503)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
-FL_CHANNEL = int(os.environ.get("FL_CHANNEL", "-1002116723783"))
+FL_CHANNEL = int(os.environ.get("FL_CHANNEL", "-1002050257310"))
 
 logging.basicConfig(
     level=logging.INFO,
