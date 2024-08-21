@@ -102,7 +102,7 @@ async def start_command(client: Client, message: Message):
                             text="<b>Expired or invalid Verification Link 🫣 Click /Start And Verify Again 😊</b>"
                         )
     else:
-        if SRT_VERIFY == "True":
+        if SRT_VERIFY == "False":
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
@@ -131,9 +131,9 @@ async def start_command(client: Client, message: Message):
         is_verified = await check_verification(id)
         
         if not is_verified:
-            if VERIFY == 'True':
+            if VERIFY == 'False':
                 btn = [[
-                    InlineKeyboardButton("👨‍💻 Verify", url=await get_token(id, f"https://filestore.rapidbots.workers.dev?start="))
+                    InlineKeyboardButton("👨‍💻 Verify", url=await get_token(id, f"https://t.me/File_store_X_bot?start="))
                     ],[
                     InlineKeyboardButton("🔻 How to open and Verify 🔺", url="https://t.me/TamilSk_Demo/3")
                 ]]
