@@ -3,10 +3,10 @@
 import os
 
 #permanent cloudflare file store url eg. https://filestore.rapidbots.workers.dev?start
-FURL = os.environ.get("FURL", "https://filestore.rapidbots.workers.dev?start=")
+FURL = os.environ.get("FURL", "https://t.me/File_store_X_bot?start=")
 
 #stream cloudflare permanent url eg. https://sk.tamilsk.workers.dev/
-CURL = os.environ.get("CURL", "https://sk.tamilsk.workers.dev/")
+CURL = os.environ.get("CURL", "https://t.me/File_store_X_bot/")
 
 #else verified message if verify false it work 
 EVERIFY_MSG = os.environ.get("EVERIFY_MSG", "<b>Hello 👋🏻, You Need To Verify To Get Files, Open Below Bot For Verification. \n\nOpen @Sk_Verify_Bot & Start The Bot 👍</b>")
